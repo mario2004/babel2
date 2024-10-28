@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ gettext('Language Selection Example') }}</title>
+</head>
+<body>
+    <h1>{{ gettext('Hello, World!') }}</h1>
+    <p>{{ gettext('Select your language:') }}</p>
+
+    <a href="{{ url_for('set_language', lang='en') }}">
+        <button>{{ gettext('English') }}</button>
+    </a>
+
+    <a href="{{ url_for('set_language', lang='es') }}">
+        <button>{{ gettext('Spanish') }}</button>
+    </a>
+</body>
+</html>
